@@ -1,7 +1,7 @@
 <template >
   <b-container fluid="xl">
     <div class="my-nav" v-if="colorMode === 'light'">
-      <b-row align-h="'center'">
+      <b-row :align-h="'center'">
         <b-col cols="2">
           <logo :iconColor="'var(--brand-yellow)'" :textColor="'var(--white)'" />
         </b-col>
@@ -67,8 +67,8 @@
           <vue-button :size="'m'" :btnType="'primary'" isIcon :iconName="'android'" :iconColor="'white'">
             Android
           </vue-button>
-          <vue-button :size="'m'" :btnType="'secondary'" isIcon :iconName="'ios'" :iconColor="'var(--brand-blue)'"
-            class="my-nav__button-ios">
+          <vue-button :size="'m'" :btnType="'secondary'" isIcon :iconName="'ios'" :iconColor="'white'"
+            class="my-nav__button-ios   my-nav__button-ios-dark">
             iOS
           </vue-button>
         </b-col>
@@ -175,7 +175,7 @@ export default {
     &--active::before {
       content: "";
       position: absolute;
-      top: 33px;
+     top: 33px;
       left: 50%;
       transform: translate(-50%);
       width: 16px;
@@ -210,6 +210,9 @@ export default {
     min-width: 147px;
     margin-left: 16px;
     color: var(--brand-blue);
+  }
+  &__button-ios-dark{
+    color:white;
   }
 }
 </style>
