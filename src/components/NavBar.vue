@@ -39,9 +39,9 @@
 
     </div>
     <div class="my-nav" v-if="colorMode === 'dark'">
-      <b-row align-h="'center'">
+      <b-row :align-h="'center'">
         <b-col cols="2">
-          <logo :iconColor="'var(--brand-yellow)'" :textColor="'var(--white)'" />
+          <logo :iconColor="'var(--brand-blue)'" :textColor="'black'" />
         </b-col>
         <b-col cols="6" :align-self="'center'">
           <ul class="my-nav__list">

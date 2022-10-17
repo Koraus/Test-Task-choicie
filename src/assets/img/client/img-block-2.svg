@@ -1,0 +1,55 @@
+<svg width="506" height="307" viewBox="0 0 506 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_156_982" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="506" height="307">
+<rect width="506" height="307" fill="#E1EFFF"/>
+</mask>
+<g mask="url(#mask0_156_982)">
+<path d="M-1 4.00001C-1 1.79087 0.790861 0 3 0H506V307H-1V4.00001Z" fill="white"/>
+<path d="M-1 4C-1 1.79086 0.790861 0 3 0H506V30H-1V4Z" fill="#2B146C"/>
+<circle opacity="0.21" cx="11" cy="15" r="4" fill="white"/>
+<circle opacity="0.21" cx="23" cy="15" r="4" fill="white"/>
+<circle opacity="0.21" cx="35" cy="15" r="4" fill="white"/>
+<rect x="19" y="50" width="120" height="257" fill="black"/>
+<rect x="35" y="66" width="72" height="16" rx="8" fill="#555560"/>
+<rect opacity="0.4" x="35" y="105" width="88" height="8" rx="4" fill="#555560"/>
+<rect opacity="0.4" x="35" y="125" width="88" height="8" rx="4" fill="#555560"/>
+<rect opacity="0.4" x="35" y="145" width="88" height="8" rx="4" fill="#555560"/>
+<rect opacity="0.4" x="35" y="165" width="88" height="8" rx="4" fill="#555560"/>
+<rect opacity="0.4" x="35" y="185" width="88" height="8" rx="4" fill="#555560"/>
+<rect x="159" y="50" width="114" height="140" fill="#ECECEC"/>
+<rect x="204" y="154" width="53" height="20" rx="10" fill="#F2CF7E"/>
+<rect x="175" y="66" width="82" height="33" fill="#D4D4D7"/>
+<rect opacity="0.4" x="175" y="112" width="82" height="6" rx="3" fill="#AAAAAF"/>
+<rect opacity="0.4" x="175" y="122" width="67" height="6" rx="3" fill="#AAAAAF"/>
+<rect opacity="0.4" x="175" y="132" width="75" height="6" rx="3" fill="#AAAAAF"/>
+<rect x="175" y="154" width="20" height="20" rx="10" fill="#3B2186"/>
+<rect x="293" y="50" width="114" height="140" fill="#ECECEC"/>
+<rect x="338" y="154" width="53" height="20" rx="10" fill="#F2CF7E"/>
+<rect x="309" y="66" width="82" height="33" fill="#D4D4D7"/>
+<rect opacity="0.4" x="309" y="112" width="82" height="6" rx="3" fill="#AAAAAF"/>
+<rect opacity="0.4" x="309" y="122" width="67" height="6" rx="3" fill="#AAAAAF"/>
+<rect opacity="0.4" x="309" y="132" width="75" height="6" rx="3" fill="#AAAAAF"/>
+<rect x="309" y="154" width="20" height="20" rx="10" fill="#3B2186"/>
+<rect x="427" y="50" width="114" height="140" fill="#ECECEC"/>
+<rect x="472" y="154" width="53" height="20" rx="10" fill="#F2CF7E"/>
+<rect x="443" y="66" width="82" height="33" fill="#D4D4D7"/>
+<rect opacity="0.4" x="443" y="112" width="82" height="6" rx="3" fill="#AAAAAF"/>
+<rect opacity="0.4" x="443" y="122" width="67" height="6" rx="3" fill="#AAAAAF"/>
+<rect opacity="0.4" x="443" y="132" width="75" height="6" rx="3" fill="#AAAAAF"/>
+<rect x="443" y="154" width="20" height="20" rx="10" fill="#3B2186"/>
+<rect x="159" y="210" width="114" height="140" fill="#ECECEC"/>
+<rect x="175" y="226" width="82" height="33" fill="#D4D4D7"/>
+<rect opacity="0.4" x="175" y="272" width="82" height="6" rx="3" fill="#AAAAAF"/>
+<rect opacity="0.4" x="175" y="282" width="67" height="6" rx="3" fill="#AAAAAF"/>
+<rect opacity="0.4" x="175" y="292" width="75" height="6" rx="3" fill="#AAAAAF"/>
+<rect x="293" y="210" width="114" height="140" fill="#ECECEC"/>
+<rect x="309" y="226" width="82" height="33" fill="#D4D4D7"/>
+<rect opacity="0.4" x="309" y="272" width="82" height="6" rx="3" fill="#AAAAAF"/>
+<rect opacity="0.4" x="309" y="282" width="67" height="6" rx="3" fill="#AAAAAF"/>
+<rect opacity="0.4" x="309" y="292" width="75" height="6" rx="3" fill="#AAAAAF"/>
+<rect x="427" y="210" width="114" height="140" fill="#ECECEC"/>
+<rect x="443" y="226" width="82" height="33" fill="#D4D4D7"/>
+<rect opacity="0.4" x="443" y="272" width="82" height="6" rx="3" fill="#AAAAAF"/>
+<rect opacity="0.4" x="443" y="282" width="67" height="6" rx="3" fill="#AAAAAF"/>
+<rect opacity="0.4" x="443" y="292" width="75" height="6" rx="3" fill="#AAAAAF"/>
+</g>
+</svg>
