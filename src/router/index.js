@@ -37,7 +37,6 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../pages/Client.vue"),
   },
-
 ];
 
 const router = new VueRouter({

@@ -33,6 +33,19 @@
     box-sizing: border-box;
 }
 
+// $container-max-widths: (
+//     sm: 540px,
+//     md: 720px,
+//     lg: 960px,
+//     xl: 1170px,
+//     xxl: 1320px,
+// );
+
+.container-xl{
+    max-width: 1200px;
+}
+
+
 //02.01 HeadlInes
 .h1 {
     font-family: "Poppins";
@@ -116,7 +129,7 @@
     line-height: 24px;
 }
 .body-m--s {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;

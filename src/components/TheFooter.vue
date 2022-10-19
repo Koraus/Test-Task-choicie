@@ -32,7 +32,7 @@
                     <b-col cols="3" class="d-flex justify-content-end z-index1" > 
                         <ul class="footer-bar__links-list links-list">
                             <li class="links-list__item">
-                                <a href="#" class="links-list__link">Home</a>
+                                <router-link class="my-nav__link" to="/">Home</router-link>
                             </li>
                             <li class="links-list__item">
                                 <a href="#" class="links-list__link">Universal Menu</a>

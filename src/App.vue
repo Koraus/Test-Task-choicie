@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    
     <router-view />
     <the-footer></the-footer>
 
@@ -11,7 +12,10 @@
 
 
 import TheFooter from "./components/TheFooter.vue";
+import './assets/scss/custom.scss';
+
 export default {
+  
   components: {
      TheFooter
   },
