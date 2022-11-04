@@ -1,43 +1,85 @@
-<template >
+<template>
   <b-container fluid="xl">
-    <div class="my-nav" v-if="colorMode === 'light'">
+    <div class="my-nav" v-if="colorMode === 'light' && !isBurger">
       <b-row :align-h="'center'">
         <b-col cols="2">
-          <logo :iconColor="'var(--brand-yellow)'" :textColor="'var(--white)'" />
+          <logo
+            :iconColor="'var(--brand-yellow)'"
+            :textColor="'var(--white)'"
+          />
         </b-col>
         <b-col cols="6" :align-self="'center'">
           <ul class="my-nav__list">
-            <li class="my-nav__item--light" :class="{ 'my-nav__item--light-active': $route.fullPath == '/' }">
+            <li
+              class="my-nav__item--light"
+              :class="{ 'my-nav__item--light-active': $route.fullPath == '/' }"
+            >
               <router-link class="my-nav__link" to="/">Home</router-link>
             </li>
-            <li class="my-nav__item--light" :class="{ 'my-nav__item--light-active': $route.fullPath == '/about' }">
+            <li
+              class="my-nav__item--light"
+              :class="{
+                'my-nav__item--light-active': $route.fullPath == '/about',
+              }"
+            >
               <router-link class="my-nav__link" to="/about">About</router-link>
             </li>
-            <li class="my-nav__item--light" :class="{ 'my-nav__item--light-active': $route.fullPath == '/client' }">
-              <router-link class="my-nav__link" to="/client">Client</router-link>
+            <li
+              class="my-nav__item--light"
+              :class="{
+                'my-nav__item--light-active': $route.fullPath == '/client',
+              }"
+            >
+              <router-link class="my-nav__link" to="/client"
+                >Client</router-link
+              >
             </li>
-            <li class="my-nav__item--light" :class="{ 'my-nav__item--light-active': $route.fullPath == '/how-to-use' }">
-              <router-link class="my-nav__link" to="/how-to-use">How to use
+            <li
+              class="my-nav__item--light"
+              :class="{
+                'my-nav__item--light-active': $route.fullPath == '/how-to-use',
+              }"
+            >
+              <router-link class="my-nav__link" to="/how-to-use"
+                >How to use
               </router-link>
             </li>
-            <li class="my-nav__item--light" :class="{ 'my-nav__item--light-active': $route.fullPath == '/contacts' }">
-              <router-link class="my-nav__link" to="/contacts">Contact </router-link>
+            <li
+              class="my-nav__item--light"
+              :class="{
+                'my-nav__item--light-active': $route.fullPath == '/contacts',
+              }"
+            >
+              <router-link class="my-nav__link" to="/contacts"
+                >Contact
+              </router-link>
             </li>
           </ul>
         </b-col>
         <b-col cols="4" class="my-nav__buttons">
-          <vue-button :size="'m'" :btnType="'primary'" isIcon :iconName="'android'" :iconColor="'white'">
+          <vue-button
+            :size="'m'"
+            :btnType="'primary'"
+            isIcon
+            :iconName="'android'"
+            :iconColor="'white'"
+          >
             Android
           </vue-button>
-          <vue-button :size="'m'" :btnType="'secondary'" isIcon :iconName="'ios'" :iconColor="'var(--brand-blue)'"
-            class="my-nav__button-ios">
+          <vue-button
+            :size="'m'"
+            :btnType="'secondary'"
+            isIcon
+            :iconName="'ios'"
+            :iconColor="'var(--brand-blue)'"
+            class="my-nav__button-ios"
+          >
             iOS
           </vue-button>
         </b-col>
       </b-row>
-
-
     </div>
+
     <div class="my-nav" v-if="colorMode === 'dark'">
       <b-row :align-h="'center'">
         <b-col cols="2">
@@ -45,36 +87,70 @@
         </b-col>
         <b-col cols="6" :align-self="'center'">
           <ul class="my-nav__list">
-            <li class="my-nav__item" :class="{ 'my-nav__item--active': $route.fullPath == '/' }">
+            <li
+              class="my-nav__item"
+              :class="{ 'my-nav__item--active': $route.fullPath == '/' }"
+            >
               <router-link class="my-nav__link" to="/">Home</router-link>
             </li>
-            <li class="my-nav__item" :class="{ 'my-nav__item--active': $route.fullPath == '/about' }">
+            <li
+              class="my-nav__item"
+              :class="{ 'my-nav__item--active': $route.fullPath == '/about' }"
+            >
               <router-link class="my-nav__link" to="/about">About</router-link>
             </li>
-            <li class="my-nav__item" :class="{ 'my-nav__item--active': $route.fullPath == '/client' }">
-              <router-link class="my-nav__link" to="/client">Client</router-link>
+            <li
+              class="my-nav__item"
+              :class="{ 'my-nav__item--active': $route.fullPath == '/client' }"
+            >
+              <router-link class="my-nav__link" to="/client"
+                >Client</router-link
+              >
             </li>
-            <li class="my-nav__item" :class="{ 'my-nav__item--active': $route.fullPath == '/how-to-use' }">
-              <router-link class="my-nav__link" to="/how-to-use">How to use
+            <li
+              class="my-nav__item"
+              :class="{
+                'my-nav__item--active': $route.fullPath == '/how-to-use',
+              }"
+            >
+              <router-link class="my-nav__link" to="/how-to-use"
+                >How to use
               </router-link>
             </li>
-            <li class="my-nav__item" :class="{ 'my-nav__item--active': $route.fullPath == '/contacts' }">
-              <router-link class="my-nav__link" to="/contacts">Contact </router-link>
+            <li
+              class="my-nav__item"
+              :class="{
+                'my-nav__item--active': $route.fullPath == '/contacts',
+              }"
+            >
+              <router-link class="my-nav__link" to="/contacts"
+                >Contact
+              </router-link>
             </li>
           </ul>
         </b-col>
         <b-col cols="4" class="my-nav__buttons">
-          <vue-button :size="'m'" :btnType="'primary'" isIcon :iconName="'android'" :iconColor="'white'">
+          <vue-button
+            :size="'m'"
+            :btnType="'primary'"
+            isIcon
+            :iconName="'android'"
+            :iconColor="'white'"
+          >
             Android
           </vue-button>
-          <vue-button :size="'m'" :btnType="'secondary'" isIcon :iconName="'ios'" :iconColor="'white'"
-            class="my-nav__button-ios   my-nav__button-ios-dark">
+          <vue-button
+            :size="'m'"
+            :btnType="'secondary'"
+            isIcon
+            :iconName="'ios'"
+            :iconColor="'white'"
+            class="my-nav__button-ios my-nav__button-ios-dark"
+          >
             iOS
           </vue-button>
         </b-col>
       </b-row>
-
-
     </div>
   </b-container>
 </template>
@@ -86,15 +162,21 @@ import VueButton from "./UI/VueButton.vue";
 export default {
   name: "NavBar",
   props: {
-    colorMode: { type: String, default: 'light' }
+    colorMode: { type: String, default: "light" },
   },
   components: { Logo, VueButton },
+  data() {
+    return {};
+  },
+  methods: {},
+  computed: {},
 };
 </script>
 
 <style scoped lang="scss">
-.my-nav {
+@import "../assets/scss/mixins.scss";
 
+.my-nav {
   &__list {
     list-style: none;
     display: flex;
@@ -104,11 +186,13 @@ export default {
     padding: 0;
   }
 
-
-
   &__item--light {
     margin-right: 50px;
     position: relative;
+
+    @include max1200 {
+      margin-right: 20px;
+    }
 
     &::after {
       opacity: 0;
@@ -142,10 +226,11 @@ export default {
     }
   }
 
-  &__item--light>a {
+  &__item--light > a {
     color: var(--white);
   }
-  &__item--light-active>a {
+
+  &__item--light-active > a {
     color: var(--white);
   }
 
@@ -175,7 +260,7 @@ export default {
     &--active::before {
       content: "";
       position: absolute;
-     top: 33px;
+      top: 33px;
       left: 50%;
       transform: translate(-50%);
       width: 16px;
@@ -185,11 +270,11 @@ export default {
     }
   }
 
-  &__item>a {
+  &__item > a {
     color: var(--gray80);
   }
 
-  &__item--active>a {
+  &__item--active > a {
     color: rgba(42, 42, 56, 1);
   }
 
@@ -211,8 +296,9 @@ export default {
     margin-left: 16px;
     color: var(--brand-blue);
   }
-  &__button-ios-dark{
-    color:white;
+
+  &__button-ios-dark {
+    color: white;
   }
 }
 </style>

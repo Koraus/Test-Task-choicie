@@ -5,15 +5,15 @@
   </div>
 </template>
 <script>
-  import NavBar from "../components/NavBar.vue";
-  export default {
-    name: 'About',
-    components: {NavBar}
-  }
+import NavBar from "../components/NavBar.vue";
+export default {
+  name: "About",
+  components: { NavBar },
+};
 </script>
 
 <style lang="scss" scoped>
-  .about{
-    padding-top:40px;
-  }
+.about {
+  padding-top: 40px;
+}
 </style>

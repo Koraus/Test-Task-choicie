@@ -1,31 +1,41 @@
-@mixin h1() {
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 52px;
-	line-height: 72px;
-}
 
-@mixin h2() {
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 52px;
-}
+$breakpoints: (
+	"max320": 320px,
+	"max540": 540px,
+	"max720": 720px,
+	"max992": 992px,
+	"max1200": 1200px,
+	"max1320": 1320px,
+);
 
-@mixin h3() {
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 32px;
-}
 
-@mixin h4() {
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 28px;
+@mixin max1320 {
+	@media (max-width: map-get($breakpoints, "max1320")) {
+		@content;
+	}
+}
+@mixin max1200 () {
+	@media (max-width: map-get($breakpoints, "max1200")) {
+		@content;
+	}
+}
+@mixin max992 {
+	@media (max-width: map-get($breakpoints, "max992")) {
+		@content;
+	}
+}
+@mixin max720 {
+	@media (max-width: map-get($breakpoints, "max720")) {
+		@content;
+	}
+}
+@mixin max540 {
+	@media (max-width: map-get($breakpoints, "max540")) {
+		@content;
+	}
+}
+@mixin max320 {
+	@media (max-width: map-get($breakpoints, "max320")) {
+		@content;
+	}
 }
