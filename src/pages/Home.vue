@@ -17,17 +17,32 @@
                 Choicie, an app. It can make your journey, date or meeting with
                 friends much better.
               </p>
-              <vue-button v-if="!isBurger" :btnType="'secondary'" class="header__btn">Get Started</vue-button>
-              <vue-button v-if="isBurger" :btnType="'primary'" class="header__btn">Get Started</vue-button>
+              <vue-button
+                v-if="!isBurger"
+                :btnType="'secondary'"
+                class="header__btn"
+                >Get Started</vue-button
+              >
+              <vue-button
+                v-if="isBurger"
+                :btnType="'primary'"
+                class="header__btn"
+                >Get Started</vue-button
+              >
             </div>
           </b-col>
           <b-col xl="6" md="5">
-            <img src="../assets/img/Home-bg-pic1.png" alt="" class="header__img" />
+            <img
+              src="../assets/img/Home-bg-pic1.png"
+              alt=""
+              class="header__img"
+            />
           </b-col>
         </b-row>
         <b-row class="features">
           <p class="body-m--large features__paragraph">
-            We are the first of our kind<span v-if="!isBurger">! Here you can find
+            We are the first of our kind<span v-if="!isBurger"
+              >! Here you can find
             </span>
             :
           </p>
@@ -35,10 +50,17 @@
             <div class="features__feature feature">
               <div class="feature__img-container">
                 <picture>
-                  <source media="(max-width:982px)" srcset="
+                  <source
+                    media="(max-width:982px)"
+                    srcset="
                       ../assets/img/icons/features/44px/restraurant_review.svg
-                    " />
-                  <img src="../assets/img/icons/features/ico-restaurant.png" alt="ico" class="feature__img" />
+                    "
+                  />
+                  <img
+                    src="../assets/img/icons/features/ico-restaurant.png"
+                    alt="ico"
+                    class="feature__img"
+                  />
                 </picture>
               </div>
               <div class="feature__text-wrapper">
@@ -51,8 +73,15 @@
             <div class="features__feature feature">
               <div class="feature__img-container">
                 <picture>
-                  <source media="(max-width:982px)" srcset="../assets/img/icons/features/44px/qr_code.svg" />
-                  <img src="../assets/img/icons/features/ico-qr-code.png" alt="ico" class="feature__img" />
+                  <source
+                    media="(max-width:982px)"
+                    srcset="../assets/img/icons/features/44px/qr_code.svg"
+                  />
+                  <img
+                    src="../assets/img/icons/features/ico-qr-code.png"
+                    alt="ico"
+                    class="feature__img"
+                  />
                 </picture>
               </div>
               <div class="feature__text-wrapper">
@@ -67,10 +96,17 @@
             <div class="features__feature feature">
               <div class="feature__img-container">
                 <picture>
-                  <source media="(max-width:982px)" srcset="
+                  <source
+                    media="(max-width:982px)"
+                    srcset="
                       ../assets/img/icons/features/44px/map_restaurant_tags.svg
-                    " />
-                  <img src="../assets/img/icons/features/ico-map.png" alt="ico" class="feature__img" />
+                    "
+                  />
+                  <img
+                    src="../assets/img/icons/features/ico-map.png"
+                    alt="ico"
+                    class="feature__img"
+                  />
                 </picture>
               </div>
               <div class="feature__text-wrapper">
@@ -85,8 +121,15 @@
             <div class="features__feature feature">
               <div class="feature__img-container">
                 <picture>
-                  <source media="(max-width:982px)" srcset="../assets/img/icons/features/44px/bonus.svg" />
-                  <img src="../assets/img/icons/features/ico-bonus.png" alt="ico" class="feature__img" />
+                  <source
+                    media="(max-width:982px)"
+                    srcset="../assets/img/icons/features/44px/bonus.svg"
+                  />
+                  <img
+                    src="../assets/img/icons/features/ico-bonus.png"
+                    alt="ico"
+                    class="feature__img"
+                  />
                 </picture>
               </div>
               <div class="feature__text-wrapper">
@@ -107,14 +150,22 @@
         <h2 class="h2 video-about__title">
           Learn more about Choicie in 1 minute
         </h2>
-        <video width="100%" height="auto" controls poster="../assets/img/home-video-poster.png">
+        <video
+          width="100%"
+          height="auto"
+          controls
+          poster="../assets/img/home-video-poster.png"
+        >
           <source src="#" type="video/mp4" />
         </video>
       </div>
     </b-container>
     <b-container fluid="xl">
       <div class="about-features">
-        <b-row class="about-feature about-features__first-block" :align-v="'center'">
+        <b-row
+          class="about-feature about-features__first-block"
+          :align-v="'center'"
+        >
           <b-col xl="6" md="7">
             <h2 class="h2 about-feature__title">
               Choicie is a universal menu for all restaurants.
@@ -128,21 +179,39 @@
               of dishes. Place your order on the way to the restaurant, then
               just show the QR-code to the waiter.
             </p>
-            <vue-button :btnType="'primary'" class="about-feature__btn">Get Started
+            <vue-button :btnType="'primary'" class="about-feature__btn"
+              >Get Started
             </vue-button>
           </b-col>
           <b-col xl="6" md="5">
             <picture>
-              <source media="(max-width:982px)" srcset="../assets/img/home-feature-1-mob.svg" />
-              <img src="../assets/img/home-feature-1.png" alt="" class="about-feature__img" />
+              <source
+                media="(max-width:982px)"
+                srcset="../assets/img/home-feature-1-mob.svg"
+              />
+              <img
+                src="../assets/img/home-feature-1.png"
+                alt=""
+                class="about-feature__img"
+              />
             </picture>
           </b-col>
         </b-row>
-        <b-row class="about-feature about-features__second-block" :align-v="'center'">
+        <b-row
+          class="about-feature about-features__second-block"
+          :align-v="'center'"
+        >
           <b-col xl="6" md="7">
             <picture>
-              <source media="(max-width:982px)" srcset="../assets/img/home-feature-2-mob.svg" />
-              <img src="../assets/img/home-feature-2.png" alt="" class="about-feature__img" />
+              <source
+                media="(max-width:982px)"
+                srcset="../assets/img/home-feature-2-mob.svg"
+              />
+              <img
+                src="../assets/img/home-feature-2.png"
+                alt=""
+                class="about-feature__img"
+              />
             </picture>
           </b-col>
           <b-col xl="6" md="7" order-md="2" class="about-feature__text-margin">
@@ -156,7 +225,8 @@
               the dishes you liked and didn't like, and the foods you're
               allergic to.
             </p>
-            <vue-button :btnType="'primary'" class="about-feature__btn">Get Started
+            <vue-button :btnType="'primary'" class="about-feature__btn"
+              >Get Started
             </vue-button>
           </b-col>
         </b-row>
@@ -174,12 +244,13 @@
         </h2>
 
         <p v-if="isBurger" class="customers__paragraph body-l">
-          And there will be more! <br/>
-          Choicie is ready to work internationally. We work with customers in 8 different time zones.
+          And there will be more! <br />
+          Choicie is ready to work internationally. We work with customers in 8
+          different time zones.
         </p>
         <p v-if="!isBurger" class="customers__paragraph body-l">
-          And there will be more! 
-          Choicie is ready to work internationally. We work with customers in 8 different time zones.
+          And there will be more! Choicie is ready to work internationally. We
+          work with customers in 8 different time zones.
         </p>
         <img src="../assets/img/map.png" alt="map" class="customers__img" />
       </section>
@@ -241,7 +312,6 @@ export default {
     margin-bottom: 49px;
   }
 
-
   &__img {
     width: fit-content;
 
@@ -252,7 +322,6 @@ export default {
 
   &__nav-bar {
     margin-bottom: 71px;
-
   }
 
   &__title {
@@ -332,7 +401,8 @@ export default {
 .feature {
   display: flex;
 
-  &__img {}
+  &__img {
+  }
 
   &__img-container {
     display: flex;
@@ -419,7 +489,6 @@ export default {
     @include max720 {
       margin-bottom: 78px;
     }
-
   }
 
   &__second-block {
@@ -451,7 +520,6 @@ export default {
       line-height: 20px;
       margin-bottom: 28px;
     }
-
   }
 
   &__paragraph--first {
@@ -475,7 +543,6 @@ export default {
     text-align: left;
     margin: 0;
     margin-bottom: 24px;
-
   }
 
   &__btn {
@@ -504,7 +571,6 @@ export default {
 
   @include max720 {
     margin-bottom: 50px;
-
   }
 
   &__subtitle {
@@ -538,7 +604,6 @@ export default {
       font-size: 18px;
       line-height: 24px;
     }
-
   }
 
   &__paragraph {
@@ -561,7 +626,5 @@ export default {
       width: 100%;
     }
   }
-
-
 }
 </style>

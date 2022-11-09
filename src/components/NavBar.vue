@@ -51,7 +51,7 @@
               }"
             >
               <router-link class="my-nav__link" to="/contacts"
-                >Contact
+                >Request
               </router-link>
             </li>
           </ul>
@@ -124,7 +124,7 @@
               }"
             >
               <router-link class="my-nav__link" to="/contacts"
-                >Contact
+                >Request
               </router-link>
             </li>
           </ul>

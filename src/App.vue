@@ -12,6 +12,7 @@ import TheFooter from "./components/TheFooter.vue";
 export default {
   components: {
     TheFooter,
+
   },
   data() {
     return {};
@@ -20,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import  "./assets/scss/mixins.scss";
+@import "./assets/scss/mixins.scss";
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -29,6 +30,4 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
-
 </style>

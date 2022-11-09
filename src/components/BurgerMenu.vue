@@ -92,7 +92,7 @@
         :class="{ 'burger-menu__item -active': $route.fullPath == '/contacts' }"
       >
         <router-link class="burger-menu__link" to="/contacts"
-          >Contact
+          >Request
         </router-link>
       </li>
     </ul>

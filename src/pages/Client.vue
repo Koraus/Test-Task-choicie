@@ -1,12 +1,16 @@
 <template>
   <div class="client">
     <header class="header client__header">
-      <nav-bar v-if="!isBurger" :colorMode="'dark'" class="header__nav-bar"></nav-bar>
-      <burger-menu v-if="isBurger"> </burger-menu>
+      <nav-bar
+        v-if="!isBurger"
+        :colorMode="'dark'"
+        class="header__nav-bar"
+      ></nav-bar>
+      <burger-menu v-if="isBurger" class="header__burger"> </burger-menu>
       <b-container fluid="xl">
         <b-row>
-          <b-col cols="12" lg="5"   class="d-flex align-items-center">
-            <div class="content">
+          <b-col cols="12" lg="5" class="d-flex align-items-center">
+            <div class="header__content">
               <h1 class="header__title h1">
                 Choicie: more clients, easier communication
               </h1>
@@ -16,23 +20,38 @@
                 help people with the same problem to get rid of it and also
                 improve cafes and restaurants.
               </p>
-              <a class="header__link body-m--medium" href="#">Watch Choicie in action — 2 min</a>
+              <a class="header__link body-m--medium" href="#"
+                >Watch Choicie in action — 2 min</a
+              >
             </div>
           </b-col>
-          <b-col cols="2"> </b-col>
-          <b-col cols="5" class="position-relative">
-            <img src="../assets/img/client/header-photo.png" alt="" />
+          <b-col lg="2" cols="0"> </b-col>
+          <b-col lg="5" cols="12" class="position-relative">
+            <img
+              src="../assets/img/client/header-photo.png"
+              alt=""
+              class="header__img"
+            />
             <div class="header__quote quote">
               <p class="quote__paragraph">
                 “We edited the menu after using this app. Now our sales are 30%
                 higher“
               </p>
               <div class="quote__author">
-                <img src="../assets/img/client/header-ico-positive-review-1.png" alt="" class="quote__ico" />
+                <img
+                  src="../assets/img/client/header-ico-positive-review-1.png"
+                  alt=""
+                  class="quote__ico"
+                />
                 <div>
                   <p class="quote__author-text">
-                    <span class="body-m--s"> Anastasia Glorman,</span> <br />
-                    <span class="body-xs"> co-fouder @syngenta </span>
+                    <span class="body-m--s quote__author-name">
+                      Anastasia Glorman,</span
+                    >
+                    <br />
+                    <span class="body-xs quote__author-info">
+                      co-fouder @syngenta
+                    </span>
                   </p>
                 </div>
               </div>
@@ -44,17 +63,37 @@
     <section class="logos-board">
       <b-container fluid="xl">
         <b-row no-gutters>
-          <b-col cols="3">
+          <b-col cols="12" lg="3">
             <span class="logos-board__text">
               500+ RESTAURANTS TRUST CHOICIE
             </span>
           </b-col>
-          <b-col cols="9" class="logos-board__logos">
-            <img src="../assets/img/client/header-logos-1.svg" alt="" class="logos-board__logo" />
-            <img src="../assets/img/client/header-logos-2.svg" alt="" class="logos-board__logo" />
-            <img src="../assets/img/client/header-logos-3.svg" alt="" class="logos-board__logo" />
-            <img src="../assets/img/client/header-logos-4.svg" alt="" class="logos-board__logo" />
-            <img src="../assets/img/client/header-logos-5.svg" alt="" class="logos-board__logo" />
+          <b-col cols="12" lg="9" class="logos-board__logos">
+            <img
+              src="../assets/img/client/header-logos-1.svg"
+              alt=""
+              class="logos-board__logo"
+            />
+            <img
+              src="../assets/img/client/header-logos-2.svg"
+              alt=""
+              class="logos-board__logo"
+            />
+            <img
+              src="../assets/img/client/header-logos-3.svg"
+              alt=""
+              class="logos-board__logo"
+            />
+            <img
+              src="../assets/img/client/header-logos-4.svg"
+              alt=""
+              class="logos-board__logo"
+            />
+            <img
+              src="../assets/img/client/header-logos-5.svg"
+              alt=""
+              class="logos-board__logo"
+            />
           </b-col>
         </b-row>
       </b-container>
@@ -70,8 +109,8 @@
       </p>
       <b-container fluid="xl">
         <b-row>
-          <b-col lg="6" md="12" cols="12">
-            <div class="performance__img-block-wrapper d-sm-flex justify-content-sm-center">
+          <b-col lg="6" md="12" cols="12" class="d-flex justify-content-center">
+            <div class="performance__img-block-wrapper">
               <div class="performance__img-block img-block">
                 <div class="img-block__text-block">
                   <h3 class="img-block__title h2">
@@ -83,12 +122,18 @@
                     and add food photos.
                   </p>
                 </div>
-                <img src="../assets/img/client/img-block-1.svg" alt="" class="img-block__img" />
+                <div class="img-block__img-container">
+                  <img
+                    src="../assets/img/client/img-block-1.svg"
+                    alt=""
+                    class="img-block__img"
+                  />
+                </div>
               </div>
             </div>
           </b-col>
-          <b-col lg="6" md="12" cols="12">
-            <div class="performance__img-block-wrapper d-sm-flex justify-content-sm-center">
+          <b-col lg="6" md="12" cols="12" class="d-flex justify-content-center">
+            <div class="performance__img-block-wrapper">
               <div class="performance__img-block img-block img-block--yellow">
                 <div class="img-block__text-block">
                   <h3 class="img-block__title h2">
@@ -100,7 +145,13 @@
                     the feedback is available in one place.
                   </p>
                 </div>
-                <img src="../assets/img/client/img-block-2.svg" alt="" class="img-block__img" />
+                <div class="img-block__img-container">
+                  <img
+                    src="../assets/img/client/img-block-2.svg"
+                    alt=""
+                    class="img-block__img"
+                  />
+                </div>
               </div>
             </div>
           </b-col>
@@ -110,7 +161,7 @@
     <section class="growth-drivers">
       <b-container fluid="xl">
         <b-row>
-          <b-col sm="8">
+          <b-col sm="8" cols="12">
             <h2 class="h2 growth-drivers__title">
               Choicie for cafes and restaurants. Five growth drivers for your
               development
@@ -123,29 +174,49 @@
         </b-row>
 
         <b-row>
-          <b-col cols="8">
+          <b-col lg="8" cols="12">
             <div class="growth-drivers__icons-wrapper">
               <div class="growth-driver growth-drivers__growth-driver">
-                <img src="../assets/img/client/growth-driver-01-l.png" alt="" class="growth-driver__icon" />
+                <img
+                  src="../assets/img/client/growth-driver-01-l.png"
+                  alt=""
+                  class="growth-driver__icon"
+                />
                 <p class="growth-driver__name body-m--s">Quality of Service</p>
               </div>
               <div class="growth-driver growth-drivers__growth-driver">
-                <img src="../assets/img/client/growth-driver-02-l.png" alt="" class="growth-driver__icon" />
+                <img
+                  src="../assets/img/client/growth-driver-02-l.png"
+                  alt=""
+                  class="growth-driver__icon"
+                />
                 <p class="growth-driver__name body-m--s">
                   Reputation and promotion on the web
                 </p>
               </div>
               <div class="growth-driver growth-drivers__growth-driver">
-                <img src="../assets/img/client/growth-driver-03-l.png" alt="" class="growth-driver__icon" />
+                <img
+                  src="../assets/img/client/growth-driver-03-l.png"
+                  alt=""
+                  class="growth-driver__icon"
+                />
                 <p class="growth-driver__name body-m--s">Visibility</p>
               </div>
 
               <div class="growth-driver growth-drivers__growth-driver">
-                <img src="../assets/img/client/growth-driver-04-l.png" alt="" class="growth-driver__icon" />
+                <img
+                  src="../assets/img/client/growth-driver-04-l.png"
+                  alt=""
+                  class="growth-driver__icon"
+                />
                 <p class="growth-driver__name body-m--s">Number of orders</p>
               </div>
               <div class="growth-driver growth-drivers__growth-driver">
-                <img src="../assets/img/client/growth-driver-05-l.png" alt="" class="growth-driver__icon" />
+                <img
+                  src="../assets/img/client/growth-driver-05-l.png"
+                  alt=""
+                  class="growth-driver__icon"
+                />
                 <p class="growth-driver__name body-m--s">
                   Convenience of work with clients
                 </p>
@@ -154,47 +225,52 @@
           </b-col>
         </b-row>
         <b-row>
-          <b-col cols="4" class="growth-drivers__row2">
+          <b-col lg="4" cols="12" class="growth-drivers__row2">
             <h3 class="h3 growth-drivers__btn-title">What Does it Take?</h3>
-            <vue-button class="growth-drivers__btn">Become a Choicie partner!</vue-button>
+            <vue-button class="growth-drivers__btn"
+              >Become a Choicie partner!</vue-button
+            >
           </b-col>
         </b-row>
       </b-container>
     </section>
     <section class="feedback">
       <b-container fluid="xl">
-        <b-row>
-          <div class="feedback__wrapper">
+        <b-row class="feedback__wrapper">
+          <b-col class="feedback__content" cols="10" offset="0" offset-lg="2">
             <b-row>
-              <b-col cols="2"> </b-col>
-              <b-col cols="10">
-                <div class="feedback__content">
-                  <div class="feedback__text">
-                    <img src="../assets/img/client/photo.png" alt="Author's photo" class="feedback__photo" />
-                    <p class="body-m--large feedback__title">
-                      Our restaurant becomes more popular after joining Choicie!
-                    </p>
-                    <p class="feedback__paragraph body-s">
-                      We started using Choicie quite recently. We adjusted our
-                      menu and increased the restaurant’s revenue thanks to live
-                      feedback.
-                    </p>
-                    <p class="feedback__name">
-                      <span class="body-s"> Nelly Spender </span>
-                      <span class="body-m--s"> — Restaurant name </span>
-                    </p>
-                  </div>
-                  <div class="feedback__profit">
-                    <p class="body-m--large feedback__title">+ 40%</p>
-                    <p class="feedback__paragraph body-s">
-                      The restaurant’s revenue increased due to menu
-                      adjustments, as well as lower grocery costs.
-                    </p>
-                  </div>
+              <b-col cols="12" md="7" lg="7">
+                <div class="feedback__text">
+                  <img
+                    src="../assets/img/client/photo.png"
+                    alt="Author's photo"
+                    class="feedback__photo"
+                  />
+                  <p class="body-m--large feedback__title">
+                    Our restaurant becomes more popular after joining Choicie!
+                  </p>
+                  <p class="feedback__paragraph body-s">
+                    We started using Choicie quite recently. We adjusted our
+                    menu and increased the restaurant’s revenue thanks to live
+                    feedback.
+                  </p>
+                  <p class="feedback__name">
+                    <span class="body-s"> Nelly Spender </span>
+                    <span class="body-m--s"> — Restaurant name </span>
+                  </p>
+                </div>
+              </b-col>
+              <b-col cols="12" md="5" lg="5">
+                <div class="feedback__profit">
+                  <p class="body-m--large feedback__title">+ 40%</p>
+                  <p class="feedback__paragraph body-s">
+                    The restaurant’s revenue increased due to menu adjustments,
+                    as well as lower grocery costs.
+                  </p>
                 </div>
               </b-col>
             </b-row>
-          </div>
+          </b-col>
         </b-row>
       </b-container>
     </section>
@@ -205,7 +281,7 @@ import NavBar from "../components/NavBar.vue";
 import VueButton from "../components/UI/VueButton.vue";
 import BurgerMenu from "../components/BurgerMenu.vue";
 export default {
-  components: { NavBar, VueButton, BurgerMenu  },
+  components: { NavBar, VueButton, BurgerMenu },
   data() {
     return {
       windowWidth: window.innerWidth,
@@ -233,29 +309,46 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "../assets/scss/mixins.scss";
+
 .client {
-  &__nav-bar {
-    margin-bottom: 119px;
-  }
 }
 
 .header {
-  padding-top: 40px;
   padding-bottom: 146px;
   background: #f4f0ff;
-  
-  &__nav-bar{
-    margin-bottom: 24px;
+
+  &__nav-bar {
+    padding-top: 40px;
+    margin-bottom: 110px;
   }
+
+  &__content {
+    @include max992 {
+      margin: 0px auto 84px auto;
+
+      max-width: 500px;
+    }
+  }
+
   &__title {
     color: var(--heading);
     text-align: left;
     margin-bottom: 24px;
+    padding-top: 40px;
+
+    @include max992 {
+      padding-top: 120px;
+    }
   }
 
   &__paragraph {
     text-align: left;
     margin-bottom: 52px;
+
+    @include max992 {
+      margin-bottom: 32px;
+    }
   }
 
   &__link {
@@ -265,10 +358,22 @@ export default {
     color: var(--brand-blue);
   }
 
+  &__img {
+    @include max1200 {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
   &__quote {
     position: absolute;
     left: -81px;
     bottom: -63px;
+
+    @include max992 {
+      left: 50%;
+      transform: translate(-50%);
+    }
   }
 }
 
@@ -281,26 +386,73 @@ export default {
   box-shadow: 0px 30px 60px rgba(21, 10, 51, 0.09);
   border-radius: 8px;
   max-width: 318px;
+  min-width: 212px;
 
-  &__author-text {
+  @include max720 {
+    padding-right: 39px;
+    padding-left: 22px;
+    padding-top: 25px;
+    padding-bottom: 23px;
+  }
+
+  &__author {
     line-height: 24px;
     margin-bottom: 0;
+  }
+
+  &__author-text {
+    text-align: left;
+    margin: 0;
+  }
+
+  &__author-name {
+    @include max720 {
+      font-size: 10px;
+      line-height: 18px;
+      text-align: left;
+    }
   }
 
   &__paragraph {
     text-align: left;
     margin-bottom: 16px;
     line-height: 24px;
+
+    @include max720 {
+      font-size: 10px;
+      line-height: 18px;
+    }
   }
 
   &__author {
     display: flex;
     margin-bottom: 0;
+
+    @include max720 {
+      font-size: 10px;
+      line-height: 18px;
+    }
+  }
+
+  &__author-info {
+    text-align: left;
+    margin-bottom: 16px;
+    line-height: 24px;
+
+    @include max720 {
+      font-size: 10px;
+      line-height: 18px;
+    }
   }
 
   &__ico {
     height: fit-content;
     margin-right: 16px;
+
+    @include max720 {
+      height: 24px;
+      margin-right: 11px;
+    }
   }
 }
 
@@ -310,8 +462,13 @@ export default {
   padding-bottom: 38px;
   margin-bottom: 120px;
 
+  @include max720 {
+    padding-top: 24px;
+    padding-bottom: 0px;
+    margin-bottom: 60px;
+  }
+
   &__text {
-    display: flex;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -320,11 +477,21 @@ export default {
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--white);
+
+    @include max992 {
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    @include max720 {
+      margin-bottom: 24px;
+    }
   }
 
   &__logos {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
     & img:last-child {
       margin-right: 0;
@@ -333,21 +500,48 @@ export default {
 
   &__logo {
     height: fit-content;
+
+    @include max720 {
+      max-height: 24px;
+      margin-bottom: 24px;
+    }
   }
 }
 
 .img-block {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 570px;
-  height: 640px;
   background: #e1efff;
-  padding-left: 52px;
-  padding-right: 52px;
-  padding-top: 52px;
+  height: 640px;
+  position: relative;
 
-  &__text-block {}
+  @include max992 {
+    max-width: 400px;
+    margin-bottom: 24px;
+    height: 540px;
+  }
+
+  @include max720 {
+    max-width: 300px;
+    height: 376px;
+  }
+
+  &__text-block {
+    margin-top: 52px;
+    margin-right: 52px;
+    margin-left: 52px;
+
+    @include max1200 {
+      margin-top: 32px;
+      margin-right: 32px;
+      margin-left: 32px;
+    }
+
+    @include max992 {
+      margin-top: 24px;
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+  }
 
   &__title {
     text-align: left;
@@ -361,11 +555,39 @@ export default {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+
+    @include max992 {
+      margin-bottom: 24px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    @include max720 {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  &__img-container {
   }
 
   &__img {
-    margin-left: 11px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     width: fit-content;
+    display: block;
+
+    @include max1200 {
+      height: 224px;
+      width: auto;
+    }
+
+    @include max720 {
+      height: 136px;
+    }
   }
 }
 
@@ -375,6 +597,10 @@ export default {
 
 .performance {
   padding-bottom: 160px;
+
+  @include max720 {
+    padding-bottom: 58px;
+  }
 
   &__subtitle {
     font-family: "Poppins";
@@ -390,14 +616,29 @@ export default {
   }
 
   &__title {
+    padding-top: 60px;
     margin-bottom: 32px;
     color: rgba(42, 42, 56, 1);
+
+    @include max992 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      padding-top: 0px;
+    }
   }
 
   &__paragraph {
     margin: 0;
     margin-bottom: 134px;
     color: rgba(127, 127, 136, 1);
+
+    @include max992 {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -408,6 +649,12 @@ export default {
   padding-bottom: 473px;
   margin-bottom: 268px;
 
+  @include max540 {
+    background-image: url("../assets/img/client/growth-drivers-bg-mob.png");
+    padding-bottom: 390px;
+    margin-bottom: 0px;
+  }
+
   &__title {
     text-align: left;
     margin-bottom: 24px;
@@ -417,6 +664,10 @@ export default {
   &__paragraph {
     text-align: left;
     margin-bottom: 104px;
+
+    @include max720 {
+      margin-bottom: 50px;
+    }
   }
 
   &__btn-title {
@@ -438,6 +689,10 @@ export default {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 54px;
+
+    @include max720 {
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -447,11 +702,22 @@ export default {
 
   &__icon {
     margin-right: 20px;
+
+    @include max540 {
+      height: 32px;
+    }
   }
 
   &__name {
     margin: 0;
     color: var(--heading);
+
+    @include max540 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: left;
+    }
   }
 }
 
@@ -459,18 +725,67 @@ export default {
   margin-bottom: 160px;
 
   &__content {
-    display: flex;
+    padding-left: 140px;
+    padding-right: 72px;
+    background: #f7f4ff;
+
+    @include max720 {
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 160px;
+    }
   }
 
   &__text {
     position: relative;
     max-width: 440px;
+    padding-top: 80px;
+    padding-bottom: 56px;
+
+    @include max720 {
+      padding-top: 0px;
+      padding-bottom: 10px;
+      max-width: 640px;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 1px;
+        background: rgba(221, 215, 237, 1);
+        height: 90%;
+
+        @include max720 {
+          height: 1px;
+          width: 100%;
+        }
+      }
+    }
   }
 
   &__photo {
     position: absolute;
     top: -190px;
     left: -340px;
+
+    @include max992 {
+      top: -46%;
+      left: 50%;
+      transform: translate(-50%, -46%);
+    }
+    @include max720 {
+      height: 206px;
+      top: -300px;
+      left: 55%;
+      transform: translate(-55%);
+    }
+    @include max540 {
+      height: 206px;
+      top: -250px;
+      left: 55%;
+      transform: translate(-55%);
+    }
   }
 
   &__title {
@@ -488,9 +803,17 @@ export default {
 
   &__profit {
     position: relative;
+    padding-bottom: 56px;
+    padding-top: 80px;
     padding-left: 60px;
-    margin-left: 60px;
     max-width: 258px;
+
+    @include max720 {
+      width: 100%;
+      padding-top: 16px;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
 
     &::after {
       position: absolute;
@@ -500,17 +823,15 @@ export default {
       width: 1px;
       background: rgba(221, 215, 237, 1);
       height: 90%;
+
+      @include max720 {
+        display: none;
+      }
     }
   }
 
-  &__wrapper {}
-
-  &__content {
-    padding-left: 140px;
-    padding-right: 72px;
-    padding-top: 80px;
-    padding-bottom: 56px;
-    background: #f7f4ff;
+  &__wrapper {
+    justify-content: center;
   }
 }
 </style>

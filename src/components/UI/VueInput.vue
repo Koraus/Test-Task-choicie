@@ -14,7 +14,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import  "../../assets/scss/mixins.scss";
+@import "../../assets/scss/mixins.scss";
 .input {
   padding: 14px 24px 14px 24px;
   font-family: "Poppins";
